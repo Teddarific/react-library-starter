@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ExampleComponent } from '../src/ExampleComponent';
+import { ExampleComponent } from '../ExampleComponent';
 
 const App = () => (
   <div>

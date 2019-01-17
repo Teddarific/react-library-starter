@@ -1,6 +1,6 @@
 # React Library Starter
 
-##### A React Library starter pack
+##### A React Library starter pack w/ easy gh-pages
 
 ![alt text](https://img.shields.io/github/license/teddarific/react-lib-starter.svg "MIT License")
 
@@ -34,13 +34,18 @@ Here's a peek of what the file structure looks like:
 ├── LICENSE
 ├── README.md
 ├── docs
-│   ├── index.html
-│   └── index.js
+│   ├── docs.07b51108.js
+│   ├── docs.07b51108.map
+│   ├── docs.ad0e1ac5.css
+│   └── index.html
 ├── package.json
 ├── src
 │   ├── ExampleComponent
 │   │   ├── index.js
 │   │   └── index.scss
+│   ├── docs
+│   │   ├── index.html
+│   │   └── index.js
 │   └── index.js
 ├── webpack.config.js
 └── yarn.lock
@@ -49,6 +54,9 @@ Here's a peek of what the file structure looks like:
 Inside ```src``` is where your library will go, and where you can create your own custom React components!
 
 Inside ```docs``` is where you can test your library, and ideal for a demo website that you can show off your cool components. It is what gets hosted when ```yarn start``` runs.
+
+## Configuring Github Pages
+The ```doc``` is all set up to run on gh-pages! Simply go into your repo's settings, and set gh-pages to run based off the source of ```master branch /docs folder```. Assuming you've built ```yarn build:docs``` and committed it to master, the docs will be published to your gh-pages!
 
 ## Disclaimer
 
