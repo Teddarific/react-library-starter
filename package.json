@@ -6,10 +6,14 @@
   "scripts": {
     "start": "./node_modules/.bin/parcel src/docs/index.html",
     "build": "./node_modules/.bin/webpack --mode=production",
-    "build:docs": "./node_modules/.bin/parcel build src/docs/index.html -d docs/ --public-url /react-simple-feedback/"
+    "build:docs": "./node_modules/.bin/parcel build src/docs/index.html -d docs/ --public-url /react-library-starter/"
   },
   "author": "Teddy Ni",
+  "repository": "https://github.com/Teddarific/react-library-starter",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
@@ -45,5 +49,10 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1",
     "webpack-node-externals": "^1.6.0"
-  }
+  },
+  "keywords": [
+    "react",
+    "library",
+    "starter"
+  ]
 }
