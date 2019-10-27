@@ -5,7 +5,8 @@
         "node": true
     },
     "extends": [
-        "airbnb"
+        "airbnb",
+        "plugin:@typescript-eslint/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -22,6 +23,15 @@
         "react"
     ],
     "rules": {
-      "import/prefer-default-export": 0
+      "import/prefer-default-export": 0,
+      "react/jsx-filename-extension": [1, { "extensions": [".tsx"]}],
+      "@typescript-eslint/explicit-function-return-type": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
     }
 }
