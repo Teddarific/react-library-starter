@@ -1,1 +1,3 @@
-export { ExampleComponent } from './ExampleComponent';
+import Hello from './components/Hello';
+
+export { Hello };
