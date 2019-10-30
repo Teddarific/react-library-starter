@@ -1,4 +1,11 @@
+import { css, jsx } from '@emotion/core';
 import * as React from 'react';
+
+const styles = {
+  root: css({
+    color: 'red',
+  }),
+};
 
 export interface HelloProps {
   compiler: string;
@@ -6,14 +13,14 @@ export interface HelloProps {
 }
 
 export default function Hello(props: HelloProps) {
+  let test = 'test';
   const { compiler, framework } = props;
   return (
-    <h1>
-        Hello from
+    <div css={{ color: 'red' }}>
+      Hello from
       {compiler}
-and
-      {framework}
-!
-    </h1>
+      and
+      {framework}! It works!!!!
+    </div>
   );
 }

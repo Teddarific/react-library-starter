@@ -4,7 +4,7 @@
   "description": "A starter for React component libraries",
   "main": "./dist/lib/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/parcel src/docs/index.html",
+    "start:dev": "webpack-dev-server --config webpack.dev.config.js --color",
     "build": "./node_modules/.bin/webpack --mode=production",
     "build:docs": "./node_modules/.bin/parcel build src/docs/index.html -d docs/ --public-url /"
   },
@@ -15,7 +15,6 @@
     "dist"
   ],
   "dependencies": {
-    "@emotion/babel-preset-css-prop": "^10.0.22",
     "@emotion/core": "^10.0.22",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
@@ -29,6 +28,8 @@
     "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@emotion/babel-preset-css-prop": "^10.0.23",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",
     "@typescript-eslint/eslint-plugin": "^2.5.0",
@@ -42,14 +43,17 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
     "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^6.0.0",
-    "parcel-bundler": "^1.12.4",
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^2.2.1",
     "ts-loader": "^6.2.1",
     "typescript": "^3.6.4",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0",
     "webpack-node-externals": "^1.7.2"
   },
   "keywords": [
