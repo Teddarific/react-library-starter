@@ -6,9 +6,11 @@ const config = {
   entry: './src/docs/index.tsx',
   devServer: {
     port: 8080,
+    hot: true,
+    open: true,
   },
   output: {
-    path: path.join(__dirname, '/dist'),
+    path: path.join(__dirname, '/build'),
     filename: 'bundle.js',
   },
   devtool: 'source-map',
