@@ -32,6 +32,33 @@ const config = {
           loader: 'html-loader',
         },
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              useRelativePath: true,
+              name: '[name].[ext]',
+              mozjpeg: {
+                progressive: true,
+                quality: 65,
+              },
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: '65-90',
+                speed: 4,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+            },
+          },
+        ],
+      },
     ],
   },
 };

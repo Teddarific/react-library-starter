@@ -2,16 +2,12 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 const config = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/docs/index.tsx',
-  devServer: {
-    port: 8080,
-    hot: true,
-    open: true,
-  },
   output: {
-    path: path.join(__dirname, '/build'),
+    path: path.join(__dirname, '/dist/docs'),
     filename: 'bundle.js',
+    // publicPath: '' // Use this if you want to host your docs on a site; this is the path your assets will be hosted at
   },
   devtool: 'source-map',
   resolve: {
