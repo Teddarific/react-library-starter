@@ -5,8 +5,10 @@ const config = {
   mode: 'production',
   entry: './src/docs/index.tsx',
   output: {
-    path: path.join(__dirname, '/dist/docs'),
-    filename: 'bundle.js',
+    path: path.join(__dirname, '/docs'),
+    filename: 'bundle.[hash].js',
+    library: '',
+    libraryTarget: 'commonjs',
     // publicPath: '' // Use this if you want to host your docs on a site; this is the path your assets will be hosted at
   },
   devtool: 'source-map',

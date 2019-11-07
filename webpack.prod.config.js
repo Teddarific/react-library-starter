@@ -5,7 +5,7 @@ const config = {
   mode: 'production',
   entry: './src/index.ts',
   output: {
-    path: path.join(__dirname, '/dist/lib'),
+    path: path.join(__dirname, '/dist'),
     filename: 'index.js',
     library: '',
     libraryTarget: 'commonjs',

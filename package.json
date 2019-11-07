@@ -2,7 +2,7 @@
   "name": "react-library-starter",
   "version": "0.0.1",
   "description": "A starter for React component libraries",
-  "main": "./dist/lib/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.config.js --color",
     "build:lib": "webpack --config webpack.prod.config.js",
