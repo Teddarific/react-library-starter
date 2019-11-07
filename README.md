@@ -27,7 +27,7 @@ To publish your library, `yarn publish` or `npm publish`
 
 ## Typescript & Emotion
 
-This starter takes advantage of ![Typescript](https://www.typescriptlang.org/) and ![Emotion](https://emotion.sh/docs/@emotion/core).
+This starter takes advantage of [Typescript](https://www.typescriptlang.org/) and [Emotion](https://emotion.sh/docs/@emotion/core).
 
 This is a personal choice, and I'd encourage you to give it a shot. If you're interested in using plain ES6 and regular scss styling,
 see release v1 of this library.
